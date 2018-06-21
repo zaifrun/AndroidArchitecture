@@ -58,10 +58,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 EditText editText = findViewById(R.id.addNewCountry);
                 String country = editText.getText().toString();
-                List<String> data = model.getCountries().getValue();
-                data.add(country);
 
-                model.getCountries().setValue(data);
+               List<String> data = model.getCountries().getValue();
+               data.add(country);
+               model.getCountries().setValue(data);
 
                 Log.d("country added:","country:"+country);
             }
