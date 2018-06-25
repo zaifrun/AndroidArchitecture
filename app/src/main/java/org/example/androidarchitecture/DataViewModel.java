@@ -7,6 +7,8 @@ import android.arch.lifecycle.ViewModel;
 import java.util.ArrayList;
 import java.util.List;
 
+//using a ViewModel for storing our data.
+//The advantage is the viewmodel is lifecycle aware.
 public class DataViewModel extends ViewModel {
 
 

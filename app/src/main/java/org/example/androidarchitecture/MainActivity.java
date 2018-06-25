@@ -48,9 +48,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //get the DataViewModel
         final DataViewModel model = ViewModelProviders.of(this).get(DataViewModel.class);
         context = this;
 
+        //Add a click listener.
         Button addButton = findViewById(R.id.button);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
